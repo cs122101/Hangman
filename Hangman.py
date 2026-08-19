@@ -13,13 +13,9 @@ class Word_predict_game:
 
   def quit_game(self):
     self.isPlay=False
-    os.system('cls' if os.name == 'nt' else 'clear')
-    print("="*20)
-    print("quit")
-    print("="*20)
 
   def update_ui(self):
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system("cls" if os.name=="nt" else "clear")
     if self.chance!=7:
       for num in range(6, self.chance-1, -1):
         self.bg[num] = self.human[num]
@@ -93,8 +89,13 @@ class Word_predict_game:
       self.update_ui()
       if self.chance==0:
           print("fall, try again!")
-      else:
+      elif self.isPlay:
           print("Congratulations! You guessed the word.")
+      else:
+        os.system("cls" if os.name=="nt" else "clear")
+        print("="*20)
+        print("exit")
+        print("="*20)
       time.sleep(5)
       self.round+=1
       self.set_round()
