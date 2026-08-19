@@ -7,7 +7,7 @@
 
 -  대소문자 차이도 오답 처리입니다. ex) 정답이 apple이면 답안을 Apple로 해도 오답처리
 
-- 코드 작성법
+- 사용 예시
   ```bash
   import Hangman.py
   
