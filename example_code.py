@@ -5,4 +5,5 @@ word_list = ["apple","orange","banana"]
 
 game = Word_predict_game(word_list)
 
+#게임시작
 game.start_game()
