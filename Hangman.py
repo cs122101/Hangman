@@ -76,6 +76,8 @@ class Word_predict_game:
           break
         elif input_word=="":
           continue
+        elif input_word[0] in self.word_list[self.round] and  input_word[0] not in self.answer:
+          self.chance-=0
         else:
           self.chance-=1
 
