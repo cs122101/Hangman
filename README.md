@@ -18,4 +18,3 @@
   
   #게임시작
   game.start_game()
-```
