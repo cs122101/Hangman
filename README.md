@@ -8,7 +8,7 @@
 -  대소문자 차이도 오답 처리입니다. ex) 정답이 apple이면 답안을 Apple로 해도 오답처리
 
 - 코드 작성법
-  
+  ```bash
   import Hangman.py
   
   #문제로 나올 단어 리스트
@@ -18,3 +18,4 @@
   
   #게임시작
   game.start_game()
+```
